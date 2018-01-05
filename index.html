@@ -1,49 +1,145 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>vue.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/moon.css">
+	<link rel="icon" href="/img/logo.png" type="image/png">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img style="border: none;box-shadow: none;background: none; width: 300px" src="/img/logo.png" />
+				<p style="font-weight: bold;font-size: 62px;">VueJS</p>
+				<p>The most complete framework</p>
+				<p style="font-size:14px">
+					by Adriano Patrick Cunha - patrick.cunha@dataprev.gov.br
+				</p>
+			</section>
+			<section>
+				<section>
+					<h2>Características</h2>
+				</section>
+				<section>
+					<h3>Progressivo</h3>
+					<p>Ecossistema com adoção incremental, escala de uma simples biblioteca a um framework completo.</p>
+				</section>
+				<section>
+					<h3>Acessível</h3>
+					<p>Já conhece HTML, CSS e JavaScript?</p>
+				</section>
+				<section>
+					<h3>Performático</h3>
+					<p>20KB min+gzip Runtime</p>
+					<p>Virtual DOM Incrivelmente Rápido</p>
+					<p>Esforço Mínimo para Otimizações</p>
+				</section>
+				<section>
+					<img height="600px" src="/img/keyPerformance.png" />
+				</section>
+				<section>
+					<img height="600px" src="/img/keyMemory.png" />
+				</section>
+				<section>
+					<h3>Reativo</h3>
+					<p>Possui uma V-DOM</p>
+					<p>Possui um ciclo de vida</p>
+				</section>
+				<section>
+					<h3>Orientado a Components</h3>
+					<p>Componentes auto-contidos</p>
+					<p>Arquivo dividido em template, style e script</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Influências</h2>
+				</section>
+				<section>
+					<h3>React</h3>
+					<p class="fragment highlight-current-blue">utilizam a abordagem de DOM virtual</p>
+					<p class="fragment highlight-current-blue">provêm componentes visuais reativos e combináveis</p>
+					<p class="fragment highlight-current-blue">mantêm o foco na biblioteca principal, com preocupações como roteamento e gerenciamento de estado global tratadas por
+						bibliotecas companheiras</p>
+				</section>
+				<section>
+					<h3>React</h3>
+					<p class="fragment highlight-current-blue">Esforços de Otimização</p>
+					<p class="fragment highlight-current-blue">JSX vs Template</p>
+					<p class="fragment highlight-current-blue">CSS com Escopo por Componente</p>
+					<p class="fragment highlight-current-blue">Escalabilidade</p>
+					<p class="fragment highlight-current-blue">Renderização Nativa</p>
+				</section>
+				<section>
+					<h3>AngularJS</h3>
+					<p class="fragment highlight-current-blue">Complexidade</p>
+					<p class="fragment highlight-current-blue">Flexibilidade e Modularidade</p>
+					<p class="fragment highlight-current-blue">Interligação com Dados(2WayBindind)</p>
+					<p class="fragment highlight-current-blue">Diretivas vs. Componentes</p>
+				</section>
+				<section>
+					<h3>Angular4</h3>
+					<p class="fragment highlight-current-blue">TypeScript</p>
+					<p class="fragment highlight-current-blue">Tamanho</p>
+					<p class="fragment highlight-current-blue">Flexibilidade</p>
+					<p class="fragment highlight-current-blue">Curva de Aprendizado</p>
+				</section>
+				<section>
+					<h3>Outros</h3>
+					<p class="fragment highlight-current-blue">Ember</p>
+					<p class="fragment highlight-current-blue">Knockout</p>
+					<p class="fragment highlight-current-blue">Polymer</p>
+					<p class="fragment highlight-current-blue">Riot</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Exemplos - Hands On</h2>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Suporte</h2>
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
 </html>
